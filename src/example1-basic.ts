@@ -9,23 +9,23 @@ const ai = genkit({
 
 async function basicGeneration() {
   try {
+    // Example 1: Generate a welcome message
     console.log('=== Welcome Message ===');
     const welcomeResponse = await ai.generate({
-      model: 'googleai/gemini-1.5-flash', // ✅ specify model
       prompt: 'Write a short welcome message for a new team member joining our development team.',
     });
     console.log(welcomeResponse.text());
 
+    // Example 2: Create a simple task list
     console.log('\n=== Task List ===');
     const taskResponse = await ai.generate({
-      model: 'googleai/gemini-1.5-flash', // ✅ specify model
       prompt: 'Create a simple 3-item todo list for setting up a new development environment.',
     });
     console.log(taskResponse.text());
 
+    // Example 3: Write a brief explanation
     console.log('\n=== Explanation ===');
     const explanationResponse = await ai.generate({
-      model: 'googleai/gemini-1.5-flash', // ✅ specify model
       prompt: 'Explain what TypeScript is in 2-3 simple sentences.',
     });
     console.log(explanationResponse.text());
@@ -34,4 +34,5 @@ async function basicGeneration() {
   }
 }
 
+// Run the example
 basicGeneration();
