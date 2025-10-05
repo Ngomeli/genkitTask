@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "example1": "tsx src/example1-basic.ts",
+    "example2": "tsx src/example2-prompts.ts",
+    "example3": "tsx src/example3-flows.ts",
+    "studio": "genkit start"
   },
   "keywords": [],
   "author": "",
@@ -22,4 +26,7 @@
     "tsx": "^4.20.6",
     "typescript": "^5.9.3"
   }
+  
+  
 }
+
