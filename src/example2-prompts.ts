@@ -26,7 +26,7 @@ async function generateStory() {
     const response = await storyGeneratorPrompt(storyInput);
 
     console.log('\n=== Generated Story ===');
-    console.log(response.text());
+    console.log(response.text.trim());
   } catch (error) {
     console.error('Error generating story:', error);
   }
@@ -43,7 +43,7 @@ async function generateDifferentStories() {
   for (const story of stories) {
     console.log(`\n=== Story: ${story.character} in ${story.setting} ===`);
     const response = await storyGeneratorPrompt(story);
-    console.log(response.text());
+    console.log(response.text.trim());
     console.log('\n' + '='.repeat(50));
   }
 }

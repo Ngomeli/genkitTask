@@ -26,7 +26,7 @@ export const greetingFlow = ai.defineFlow(
     });
 
     return {
-      greeting: response.text().trim(),
+      greeting: response.text.trim(),
     };
   },
 );
@@ -49,7 +49,7 @@ export const jokeFlow = ai.defineFlow(
     });
 
     return {
-      joke: response.text().trim(),
+      joke: response.text.trim(),
     };
   },
 );
